@@ -143,10 +143,8 @@ export default function ProjectsPage() {
               <button
                 key={btn.id}
                 onClick={() => setActiveFilter(btn.id)}
-                className={`btn ${activeFilter === btn.id ? "btn-gold" : "btn-gold btn-outline"}`}
+                className={`btn ${activeFilter === btn.id ? "btn-filled" : "btn-outline"}`}
                 style={{
-                  backgroundColor: activeFilter === btn.id ? "var(--accent-gold)" : "transparent",
-                  color: activeFilter === btn.id ? "#000" : "var(--accent-gold)",
                   padding: "10px 22px",
                   fontSize: "0.7rem",
                 }}
@@ -163,7 +161,9 @@ export default function ProjectsPage() {
         <section style={{ padding: "60px 6% 40px", backgroundColor: "var(--bg-primary)" }}>
           <div className="section-container">
             <div style={{
-              backgroundColor: "rgba(201, 168, 106, 0.05)",
+              backgroundColor: "var(--bg-card)",
+              borderRadius: "16px",
+              boxShadow: "var(--shadow-sm)",
               border: "1px solid var(--border-color)",
               padding: "40px",
               display: "flex",
@@ -174,15 +174,15 @@ export default function ProjectsPage() {
             }} className="fade-in-up">
               <div style={{ maxWidth: "750px" }}>
                 <span className="project-tag" style={{ fontSize: "0.75rem", marginBottom: "8px" }}>FEATURED CLIENT CONTRACTOR</span>
-                <h2 style={{ fontSize: "1.6rem", letterSpacing: "0.08em", marginBottom: "12px" }}>
-                  CONTRACTING WORK FOR <span className="gold-text">SOBHA REALTY</span>
+                <h2 style={{ fontSize: "1.6rem", letterSpacing: "0.08em", marginBottom: "12px", textTransform: "none" }}>
+                  Contracting Work for <span className="gold-serif">Sobha Realty</span>
                 </h2>
                 <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem", lineHeight: "1.6" }}>
                   Dharshanskyline Contracting takes immense pride in delivering high-specification structural concrete work, blockwork masonry, and exterior tower elevations for Sobha Realty projects.
                 </p>
               </div>
               <div style={{ display: "flex", gap: "15px", alignItems: "center" }}>
-                <span className="btn btn-gold" style={{ padding: "12px 24px", fontSize: "0.7rem", backgroundColor: "var(--accent-gold)", color: "#000", fontWeight: "bold" }}>
+                <span className="btn btn-filled" style={{ padding: "12px 24px", fontSize: "0.7rem", fontWeight: "bold" }}>
                   OFFICIAL CONTRACTOR WORK
                 </span>
               </div>
@@ -200,8 +200,10 @@ export default function ProjectsPage() {
                 key={project.id} 
                 className="project-card" 
                 style={{ 
-                  backgroundColor: "var(--bg-secondary)", 
+                  backgroundColor: "var(--bg-card)", 
                   border: "1px solid var(--border-color)",
+                  borderRadius: "12px",
+                  boxShadow: "var(--shadow-sm)",
                   aspectRatio: "4 / 4.5",
                   cursor: "pointer"
                 }}

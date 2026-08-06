@@ -26,7 +26,7 @@ export default function StandardsPage() {
           <div className="standards-grid">
             <div className="standard-card">
               <div className="card-icon">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-brown)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
               </div>
               <h3 className="card-title">ZERO-ACCIDENT POLICY</h3>
               <div className="card-subtitle">SITE SAFETY FIRST</div>
@@ -37,7 +37,7 @@ export default function StandardsPage() {
 
             <div className="standard-card">
               <div className="card-icon">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-brown)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               </div>
               <h3 className="card-title">ISO 9001:2015 COMPLIANCE</h3>
               <div className="card-subtitle">QUALITY ASSURANCE</div>
@@ -48,7 +48,7 @@ export default function StandardsPage() {
 
             <div className="standard-card">
               <div className="card-icon">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-brown)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>
               </div>
               <h3 className="card-title">GREEN BUILDING INITIATIVES</h3>
               <div className="card-subtitle">SUSTAINABLE PRACTICE</div>

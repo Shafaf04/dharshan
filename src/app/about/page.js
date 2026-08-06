@@ -55,8 +55,8 @@ export default function AboutPage() {
 
           <div className="about-image-wrapper">
             <Image 
-              src="/images/about_detail.png" 
-              alt="Dharshanskyline Craftsmanship" 
+              src="/images/about_construction_no_people.png" 
+              alt="Dharshanskyline Craftsmanship & Engineering" 
               width={600}
               height={520}
               className="about-img"

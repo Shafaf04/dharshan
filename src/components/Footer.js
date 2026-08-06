@@ -1,7 +1,27 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { translations } from "@/utils/translations";
 
 export default function Footer() {
+  const [lang, setLang] = useState("en");
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem("dharshan_lang") || "en";
+    setLang(savedLang);
+
+    const handleLangChange = (e) => {
+      setLang(e.detail || "en");
+    };
+
+    window.addEventListener("dharshan_lang_change", handleLangChange);
+    return () => window.removeEventListener("dharshan_lang_change", handleLangChange);
+  }, []);
+
+  const t = translations[lang] || translations.en;
+
   return (
     <footer className="contact-section">
       <div className="section-container contact-container">
@@ -16,7 +36,7 @@ export default function Footer() {
             />
           </Link>
           <p className="footer-desc">
-            Building more than structures, we build trust, quality, and long-lasting relationships across South India.
+            {t.footer.tagline}
           </p>
           <div className="social-links">
             <a href="#" className="social-icon" aria-label="Facebook">
@@ -32,19 +52,19 @@ export default function Footer() {
         </div>
 
         <div className="contact-center fade-in-up">
-          <h3 className="footer-title">QUICK LINKS</h3>
+          <h3 className="footer-title">{t.footer.quickLinks}</h3>
           <ul className="footer-links">
-            <li><Link href="/">HOME</Link></li>
-            <li><Link href="/about">ABOUT US</Link></li>
-            <li><Link href="/services">SERVICES</Link></li>
-            <li><Link href="/projects">OUR PROJECTS</Link></li>
-            <li><Link href="/standards">SAFETY & STANDARDS</Link></li>
-            <li><Link href="/contact">CONTACT US</Link></li>
+            <li><Link href="/">{lang === "ar" ? "الرئيسية" : "HOME"}</Link></li>
+            <li><Link href="/about">{lang === "ar" ? "من نحن" : "ABOUT US"}</Link></li>
+            <li><Link href="/services">{lang === "ar" ? "الخدمات" : "SERVICES"}</Link></li>
+            <li><Link href="/projects">{lang === "ar" ? "المشاريع" : "OUR PROJECTS"}</Link></li>
+            <li><Link href="/standards">{lang === "ar" ? "المعايير والأنظمة" : "SAFETY & STANDARDS"}</Link></li>
+            <li><Link href="/contact">{lang === "ar" ? "اتصل بنا" : "CONTACT US"}</Link></li>
           </ul>
         </div>
 
         <div className="contact-right fade-in-up">
-          <h3 className="footer-title">GET IN TOUCH</h3>
+          <h3 className="footer-title">{t.footer.contact}</h3>
           <ul className="contact-info">
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -56,14 +76,14 @@ export default function Footer() {
             </li>
             <li>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span className="info-text">Serving Across South India</span>
+              <span className="info-text">{t.footer.location}</span>
             </li>
           </ul>
         </div>
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Dharshanskyline Contracting. All Rights Reserved.</p>
+        <p>{t.footer.copyright}</p>
       </div>
     </footer>
   );

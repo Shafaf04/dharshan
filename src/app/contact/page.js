@@ -64,15 +64,15 @@ export default function ContactPage() {
                     <label>Project Details / Site Location</label>
                     <textarea className="form-control" rows="4" placeholder="Mention plot size, location, planned scope, etc."></textarea>
                   </div>
-                  <button type="submit" className="btn btn-gold btn-outline" style={{ marginTop: "10px" }}>
-                    SUBMIT PROJECT INQUIRY
+                  <button type="submit" className="btn btn-filled" style={{ marginTop: "10px" }}>
+                    SUBMIT PROJECT INQUIRY &rarr;
                   </button>
                 </form>
               )}
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-              <div style={{ background: "var(--bg-secondary)", padding: "30px", border: "1px solid var(--border-color)" }}>
+              <div style={{ background: "var(--bg-card)", padding: "30px", border: "1px solid var(--border-color)", borderRadius: "12px", boxShadow: "var(--shadow-sm)" }}>
                 <h3 className="card-title">HEADQUARTERS OFFICE</h3>
                 <p className="card-desc" style={{ marginTop: "8px" }}>
                   DharshanSkyline Contracting Tower,<br />
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div style={{ background: "var(--bg-secondary)", padding: "30px", border: "1px solid var(--border-color)" }}>
+              <div style={{ background: "var(--bg-card)", padding: "30px", border: "1px solid var(--border-color)", borderRadius: "12px", boxShadow: "var(--shadow-sm)" }}>
                 <h3 className="card-title">DIRECT CONTACT</h3>
                 <p className="card-desc" style={{ marginTop: "8px" }}>
                   <strong>Phone:</strong> +91 12345 67890 / +91 98765 43210<br />

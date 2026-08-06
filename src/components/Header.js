@@ -40,13 +40,38 @@ export default function Header() {
     document.body.style.overflow = "";
   };
 
-  const navItems = [
+  const [lang, setLang] = useState("en");
+
+  useEffect(() => {
+    const savedLang = localStorage.getItem("dharshan_lang") || "en";
+    setLang(savedLang);
+    document.documentElement.dir = savedLang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = savedLang;
+  }, []);
+
+  const toggleLanguage = () => {
+    const nextLang = lang === "en" ? "ar" : "en";
+    setLang(nextLang);
+    localStorage.setItem("dharshan_lang", nextLang);
+    document.documentElement.dir = nextLang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = nextLang;
+    window.dispatchEvent(new CustomEvent("dharshan_lang_change", { detail: nextLang }));
+  };
+
+  const navItems = lang === "ar" ? [
+    { label: "الرئيسية", href: "/" },
+    { label: "من نحن", href: "/about" },
+    { label: "الخدمات", href: "/services" },
+    { label: "المشاريع", href: "/projects" },
+    { label: "المعايير", href: "/standards" },
+    { label: "اتصل بنا", href: "/contact" },
+  ] : [
     { label: "HOME", href: "/" },
     { label: "ABOUT", href: "/about" },
     { label: "SERVICES", href: "/services" },
     { label: "PROJECTS", href: "/projects" },
     { label: "STANDARDS", href: "/standards" },
-    { label: "CONTACT", href: "/contact", isBtn: true },
+    { label: "CONTACT", href: "/contact" },
   ];
 
   return (
@@ -81,7 +106,7 @@ export default function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`nav-link ${item.isBtn ? "nav-contact-btn" : ""} ${isActive ? "active" : ""}`}
+                    className={`nav-link ${isActive ? "active" : ""}`}
                     onClick={closeMobileMenu}
                   >
                     {item.label}
@@ -90,6 +115,25 @@ export default function Header() {
               );
             })}
           </ul>
+          
+          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginLeft: "25px" }}>
+            {/* Sliding EN / AR Language Switcher */}
+            <div 
+              className={`lang-toggle-switch ${lang === "ar" ? "is-ar" : ""}`}
+              onClick={toggleLanguage}
+              title={lang === "en" ? "التحويل إلى العربية" : "Switch to English"}
+              role="button"
+              tabIndex={0}
+            >
+              <div className="lang-toggle-slider"></div>
+              <span className={`lang-option ${lang === "en" ? "active" : ""}`}>EN</span>
+              <span className={`lang-option ${lang === "ar" ? "active" : ""}`}>AR</span>
+            </div>
+
+            <Link href="/contact" className="btn btn-filled" style={{ padding: "10px 20px", fontSize: "0.7rem" }} onClick={closeMobileMenu}>
+              {lang === "ar" ? "طلب عرض سعر ←" : "GET A QUOTE →"}
+            </Link>
+          </div>
         </nav>
       </div>
     </header>

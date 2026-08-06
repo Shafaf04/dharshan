@@ -48,7 +48,7 @@ export default function ServicesPage() {
           <div className="services-grid" style={{ marginBottom: "60px" }}>
             <div className="service-card" style={{ borderRight: "1px solid var(--border-color)", borderBottom: "1px solid var(--border-color)", padding: "40px" }}>
               <div className="service-icon-wrapper">
-                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-brown)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                   <polyline points="9 22 9 12 15 12 15 22"></polyline>
                 </svg>
@@ -66,7 +66,7 @@ export default function ServicesPage() {
 
             <div className="service-card" style={{ borderBottom: "1px solid var(--border-color)", padding: "40px" }}>
               <div className="service-icon-wrapper">
-                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-brown)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
                   <line x1="9" y1="22" x2="9" y2="16"></line>
                   <line x1="15" y1="22" x2="15" y2="16"></line>
@@ -86,7 +86,7 @@ export default function ServicesPage() {
 
             <div className="service-card" style={{ borderRight: "1px solid var(--border-color)", padding: "40px" }}>
               <div className="service-icon-wrapper">
-                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-brown)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M2 20V4h8l2 4h10v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path>
                 </svg>
               </div>
@@ -103,7 +103,7 @@ export default function ServicesPage() {
 
             <div className="service-card" style={{ padding: "40px" }}>
               <div className="service-icon-wrapper">
-                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-brown)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                 </svg>
               </div>
