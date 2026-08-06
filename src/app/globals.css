@@ -15,6 +15,34 @@
     --transition-quick: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Light Theme Variables */
+[data-theme="light"] {
+    --bg-primary: #FAFAFA;
+    --bg-secondary: #FFFFFF;
+    --accent-gold: #B38F4D;
+    --accent-gold-hover: #967435;
+    --text-primary: #111111;
+    --text-secondary: #4A4A50;
+    --text-muted: #71717A;
+    --nav-bg: rgba(250, 250, 250, 0.88);
+    --border-color: rgba(179, 143, 77, 0.22);
+    --border-color-hover: rgba(179, 143, 77, 0.5);
+}
+
+[data-theme="light"] .bg-grid-overlay {
+    background-image: 
+        linear-gradient(rgba(179, 143, 77, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(179, 143, 77, 0.04) 1px, transparent 1px);
+}
+
+[data-theme="light"] .image-overlay {
+    background: linear-gradient(180deg, rgba(250, 250, 250, 0.1) 0%, rgba(250, 250, 250, 0.6) 100%);
+}
+
+[data-theme="light"] .sticky-header.scrolled {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 /* Global Reset & Base Styles */
 * {
     margin: 0;
@@ -284,6 +312,61 @@ section {
     height: 1.5px;
     background-color: var(--text-primary);
     transition: var(--transition-quick);
+}
+
+/* -------------------------------------------------------------
+   Floating Side Theme Toggle Button
+------------------------------------------------------------- */
+.side-theme-toggle {
+    position: fixed;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--accent-gold);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: var(--transition-quick);
+    backdrop-filter: blur(8px);
+}
+
+.side-theme-toggle:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-50%) scale(1.12);
+    box-shadow: 0 12px 35px rgba(201, 168, 106, 0.35);
+    background-color: var(--bg-primary);
+}
+
+.theme-toggle-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.side-theme-toggle:hover .theme-toggle-icon {
+    transform: rotate(25deg);
+}
+
+@media (max-width: 768px) {
+    .side-theme-toggle {
+        right: 18px;
+        bottom: 28px;
+        top: auto;
+        transform: none;
+        width: 46px;
+        height: 46px;
+    }
+    .side-theme-toggle:hover {
+        transform: scale(1.1);
+    }
 }
 
 /* -------------------------------------------------------------

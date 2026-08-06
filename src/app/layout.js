@@ -15,6 +15,7 @@ export const metadata = {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTransition from "@/components/PageTransition";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function RootLayout({ children }) {
   return (
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased">
         <div className="bg-grid-overlay"></div>
         <Header />
+        <ThemeToggle />
         <PageTransition>
           {children}
         </PageTransition>
