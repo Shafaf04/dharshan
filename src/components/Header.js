@@ -9,7 +9,6 @@ import Image from "next/image";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [theme, setTheme] = useState("dark");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -21,20 +20,10 @@ export default function Header() {
       }
     };
 
-    const updateTheme = () => {
-      const currentTheme = document.documentElement.getAttribute("data-theme") || "dark";
-      setTheme(currentTheme);
-    };
-
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("themeChange", updateTheme);
     handleScroll();
-    updateTheme();
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("themeChange", updateTheme);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMobileMenu = () => {
@@ -55,6 +44,7 @@ export default function Header() {
     { label: "HOME", href: "/" },
     { label: "ABOUT", href: "/about" },
     { label: "SERVICES", href: "/services" },
+    { label: "PROJECTS", href: "/projects" },
     { label: "STANDARDS", href: "/standards" },
     { label: "CONTACT", href: "/contact", isBtn: true },
   ];
@@ -64,7 +54,7 @@ export default function Header() {
       <div className="header-container">
         <Link href="/" className="logo-link" onClick={closeMobileMenu}>
           <Image 
-            src={theme === "light" ? "/images/logo-dark.png" : "/images/logo.png"} 
+            src="/images/logo.png" 
             alt="DharshanSkyline Contracting Logo" 
             width={240} 
             height={70} 

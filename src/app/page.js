@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedStat from "@/components/AnimatedStat";
 
 export default function Home() {
+  const [selectedImage, setSelectedImage] = useState(null);
   const animObserverRef = useRef(null);
 
   useEffect(() => {
@@ -187,6 +188,86 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Projects Section - Sobha Realty */}
+      <section id="projects" className="projects-section" style={{ backgroundColor: "var(--bg-secondary)", borderTop: "1px solid var(--border-color)", borderBottom: "1px solid var(--border-color)" }}>
+        <div className="section-container">
+          <div className="label-container fade-in-up">
+            <span className="section-label">FEATURED CLIENT WORK</span>
+            <span className="label-line"></span>
+          </div>
+          
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "20px", marginBottom: "40px" }} className="fade-in-up">
+            <div>
+              <h2 className="section-title" style={{ marginBottom: "12px" }}>
+                CONTRACTING WORK FOR <span className="gold-text">SOBHA REALTY</span>
+              </h2>
+              <p style={{ color: "var(--text-secondary)", fontSize: "0.95rem", maxWidth: "700px" }}>
+                High-precision structural construction, elevation execution, and premium turnkey contracting delivered for Sobha Realty developments.
+              </p>
+            </div>
+            <Link href="/projects" className="btn btn-gold btn-outline">EXPLORE ALL PROJECTS</Link>
+          </div>
+
+          <div className="projects-grid fade-in-up" style={{ marginBottom: "40px" }}>
+            {/* Project Card 1 */}
+            <div className="project-card" style={{ cursor: "pointer" }} onClick={() => setSelectedImage({ src: "/images/sobha/sobha-1.jpg", title: "Sobha Tower - Structural Framing", client: "Sobha Realty" })}>
+              <div className="project-image-container">
+                <Image src="/images/sobha/sobha-1.jpg" alt="Sobha Realty Structural Contracting" fill className="project-img" sizes="(max-width: 768px) 100vw, 25vw" />
+                <div className="project-hover-overlay">
+                  <div className="project-details">
+                    <span className="project-tag">SOBHA REALTY</span>
+                    <h3 className="project-card-title">STRUCTURAL TOWER FRAMING</h3>
+                    <p style={{ fontSize: "0.75rem", color: "var(--text-secondary)", marginTop: "4px" }}>Click to view details</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Card 2 */}
+            <div className="project-card" style={{ cursor: "pointer" }} onClick={() => setSelectedImage({ src: "/images/sobha/sobha-2.jpg", title: "Sobha Heights - Structural Elevation", client: "Sobha Realty" })}>
+              <div className="project-image-container">
+                <Image src="/images/sobha/sobha-2.jpg" alt="Sobha Heights Structural Elevation" fill className="project-img" sizes="(max-width: 768px) 100vw, 25vw" />
+                <div className="project-hover-overlay">
+                  <div className="project-details">
+                    <span className="project-tag">SOBHA REALTY</span>
+                    <h3 className="project-card-title">HIGH-RISE ELEVATION WORK</h3>
+                    <p style={{ fontSize: "0.75rem", color: "var(--text-secondary)", marginTop: "4px" }}>Click to view details</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Card 3 */}
+            <div className="project-card" style={{ cursor: "pointer" }} onClick={() => setSelectedImage({ src: "/images/sobha/sobha-3.jpg", title: "Sobha Residency - Architectural Execution", client: "Sobha Realty" })}>
+              <div className="project-image-container">
+                <Image src="/images/sobha/sobha-3.jpg" alt="Sobha Residency Architectural Execution" fill className="project-img" sizes="(max-width: 768px) 100vw, 25vw" />
+                <div className="project-hover-overlay">
+                  <div className="project-details">
+                    <span className="project-tag">SOBHA REALTY</span>
+                    <h3 className="project-card-title">ARCHITECTURAL MASONRY</h3>
+                    <p style={{ fontSize: "0.75rem", color: "var(--text-secondary)", marginTop: "4px" }}>Click to view details</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project Card 4 */}
+            <div className="project-card" style={{ cursor: "pointer" }} onClick={() => setSelectedImage({ src: "/images/sobha/sobha-4.jpg", title: "Sobha Commercial - Site Contracting", client: "Sobha Realty" })}>
+              <div className="project-image-container">
+                <Image src="/images/sobha/sobha-4.jpg" alt="Sobha Commercial Site Contracting" fill className="project-img" sizes="(max-width: 768px) 100vw, 25vw" />
+                <div className="project-hover-overlay">
+                  <div className="project-details">
+                    <span className="project-tag">SOBHA REALTY</span>
+                    <h3 className="project-card-title">TURNKEY SITE CONTRACTING</h3>
+                    <p style={{ fontSize: "0.75rem", color: "var(--text-secondary)", marginTop: "4px" }}>Click to view details</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials / Client Trust Section */}
       <section style={{ backgroundColor: "var(--bg-secondary)", borderTop: "1px solid var(--border-color)", borderBottom: "1px solid var(--border-color)" }}>
         <div className="section-container">
@@ -234,6 +315,75 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Image Lightbox Modal */}
+      {selectedImage && (
+        <div 
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "rgba(0, 0, 0, 0.9)",
+            backdropFilter: "blur(8px)",
+            zIndex: 9999,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "20px",
+          }}
+          onClick={() => setSelectedImage(null)}
+        >
+          <div 
+            style={{
+              position: "relative",
+              maxWidth: "900px",
+              width: "100%",
+              backgroundColor: "var(--bg-primary)",
+              border: "1px solid var(--border-color-hover)",
+              padding: "20px",
+              boxShadow: "0 20px 50px rgba(0,0,0,0.8)",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedImage(null)}
+              style={{
+                position: "absolute",
+                top: "15px",
+                right: "15px",
+                background: "transparent",
+                border: "none",
+                color: "var(--accent-gold)",
+                fontSize: "1.5rem",
+                cursor: "pointer",
+                zIndex: 10,
+              }}
+              aria-label="Close modal"
+            >
+              ✕
+            </button>
+            <div style={{ position: "relative", width: "100%", height: "500px", marginBottom: "15px" }}>
+              <Image 
+                src={selectedImage.src} 
+                alt={selectedImage.title} 
+                fill 
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+            <div style={{ borderTop: "1px solid var(--border-color)", paddingTop: "15px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "10px" }}>
+              <div>
+                <span className="project-tag">{selectedImage.client}</span>
+                <h3 style={{ fontSize: "1.1rem", color: "var(--text-primary)", letterSpacing: "0.1em" }}>{selectedImage.title}</h3>
+              </div>
+              <span className="btn btn-gold btn-outline" style={{ padding: "8px 16px", fontSize: "0.65rem" }}>
+                OFFICIAL WORK FOR SOBHA REALTY
+              </span>
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
