@@ -197,6 +197,7 @@ section {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition-smooth);
+    direction: ltr !important;
 }
 
 .sticky-header.scrolled {
@@ -212,6 +213,7 @@ section {
     justify-content: space-between;
     align-items: center;
     transition: var(--transition-smooth);
+    direction: ltr !important;
 }
 
 .sticky-header.scrolled .header-container {
@@ -1398,6 +1400,10 @@ html[dir="rtl"] .diagonal-line {
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        padding: 16px 5% !important;
+    }
+
     .mobile-toggle {
         display: flex;
     }
@@ -1406,13 +1412,17 @@ html[dir="rtl"] .diagonal-line {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 85%;
         height: 100vh;
         background-color: var(--bg-primary);
         border-left: 1px solid var(--border-color);
         z-index: 1000;
         transition: var(--transition-smooth);
-        padding: 120px 40px;
+        padding: 100px 30px 40px 30px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
     }
     
     .nav-menu.open {
@@ -1422,13 +1432,30 @@ html[dir="rtl"] .diagonal-line {
     .nav-list {
         flex-direction: column;
         align-items: flex-start;
-        gap: 28px;
+        gap: 22px;
+        width: 100%;
+        margin-bottom: 30px;
     }
     
     .nav-link {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     
+    .header-actions {
+        margin-left: 0 !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px !important;
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .header-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
     .mobile-toggle.active .burger-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 6px);
     }
@@ -1441,8 +1468,64 @@ html[dir="rtl"] .diagonal-line {
         transform: rotate(-45deg) translate(5px, -6px);
     }
     
+    .hero-section {
+        height: auto !important;
+        min-height: 100vh;
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+    }
+    
+    .hero-diagonal-layout {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    .hero-left-content {
+        padding: 0 5% !important;
+        text-align: left;
+    }
+
+    html[dir="rtl"] .hero-left-content {
+        text-align: right;
+    }
+
+    .hero-right-image {
+        height: 320px !important;
+        width: 100%;
+    }
+
+    .hero-right-image-wrapper,
+    html[dir="rtl"] .hero-right-image-wrapper {
+        position: relative !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%) !important;
+        border-radius: 16px;
+    }
+
+    .diagonal-line {
+        display: none !important;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+        padding: 20px 16px !important;
+    }
+
+    .stat-card-item {
+        border-right: none !important;
+        border-bottom: 1px solid var(--border-color);
+        padding: 10px 0 !important;
+    }
+
+    .stat-card-item:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem !important;
     }
     
     .section-title {
@@ -1464,5 +1547,23 @@ html[dir="rtl"] .diagonal-line {
     
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .stat-card-item {
+        border-bottom: 1px solid var(--border-color) !important;
+    }
+
+    .stat-card-item:last-child {
+        border-bottom: none !important;
+    }
+
+    .hero-title {
+        font-size: 2rem !important;
     }
 }

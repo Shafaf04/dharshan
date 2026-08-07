@@ -116,7 +116,7 @@ export default function Header() {
             })}
           </ul>
           
-          <div style={{ display: "flex", alignItems: "center", gap: "15px", marginLeft: "25px" }}>
+          <div className="header-actions" style={{ display: "flex", alignItems: "center", gap: "15px", marginLeft: "25px" }}>
             {/* Sliding EN / AR Language Switcher */}
             <div 
               className={`lang-toggle-switch ${lang === "ar" ? "is-ar" : ""}`}
