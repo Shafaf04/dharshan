@@ -48,7 +48,7 @@ export default function ContactPage() {
           </div>
           <h2 className="section-title">SCHEDULE A TECHNICAL SITE CONSULTATION</h2>
 
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "50px" }}>
+          <div className="contact-page-grid">
             <div>
               {formSubmitted ? (
                 <div style={{ padding: "40px", border: "1px solid var(--accent-gold)", backgroundColor: "rgba(201, 168, 106, 0.08)", textTransform: "uppercase", textAlign: "center" }}>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                 <h3 className="card-title">OFFICE</h3>
                 <p className="card-desc" style={{ marginTop: "8px" }}>
                   Office No. 310, P T C Building,<br />
-                  Deira – Al Qusais Industrial Area 1,<br />
+                  Deira, Al Qusais Industrial Area 1,<br />
                   Dubai, UAE
                 </p>
               </div>
@@ -120,8 +120,7 @@ export default function ContactPage() {
                 <h3 className="card-title">DIRECT CONTACT</h3>
                 <p className="card-desc" style={{ marginTop: "8px" }}>
                   <strong>Phone:</strong> +971 50 164 7008<br />
-                  <strong>Email:</strong> dharshanskycon@gmail.com<br />
-                  <strong>Hours:</strong> Mon - Sat: 9:00 AM - 6:30 PM
+                  <strong>Email:</strong> dharshanskycon@gmail.com
                 </p>
               </div>
             </div>

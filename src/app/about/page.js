@@ -81,7 +81,7 @@ export default function AboutPage() {
               </div>
               <h3 className="card-title">DEVADHARSHAN SAMY SAMY</h3>
               <div className="card-subtitle">FOUNDER &amp; MANAGING DIRECTOR</div>
-              <p className="card-desc">Over 20 years of experience leading major commercial and residential civil developments across the region.</p>
+              <p className="card-desc">Over 5 years of experience leading major commercial and residential civil developments across the region.</p>
             </div>
 
             <div className="team-card">
