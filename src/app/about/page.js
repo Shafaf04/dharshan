@@ -79,7 +79,7 @@ export default function AboutPage() {
               <div className="card-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
               </div>
-              <h3 className="card-title">DHARSHAN SHARMA</h3>
+              <h3 className="card-title">DEVADHARSHAN SAMY SAMY</h3>
               <div className="card-subtitle">FOUNDER &amp; MANAGING DIRECTOR</div>
               <p className="card-desc">Over 20 years of experience leading major commercial and residential civil developments across the region.</p>
             </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
               <div className="card-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
               </div>
-              <h3 className="card-title">ER. S. RAGHAVAN</h3>
+              <h3 className="card-title">SELVAN</h3>
               <div className="card-subtitle">CHIEF STRUCTURAL ENGINEER</div>
               <p className="card-desc">Specializes in high-rise RCC framing, industrial steel trussing, and seismic-resistant structural calculations.</p>
             </div>
@@ -97,8 +97,8 @@ export default function AboutPage() {
               <div className="card-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C9A86A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
               </div>
-              <h3 className="card-title">K. PRAVEEN KUMAR</h3>
-              <div className="card-subtitle">HEAD OF PROJECT PLANNING</div>
+              <h3 className="card-title">TIRUPATHI</h3>
+              <div className="card-subtitle">PROJECT MANAGER</div>
               <p className="card-desc">Manages material logistics, subcontractor coordination, and strict timeline adherence on all site developments.</p>
             </div>
           </div>

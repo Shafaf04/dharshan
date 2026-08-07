@@ -57,10 +57,11 @@ export const translations = {
       title: "What Our Partners Say",
     },
     footer: {
-      tagline: "Building more than structures, we build trust, quality, and long-lasting relationships across GCC and South Asia.",
+      tagline: "Building more than structures, we build trust, quality, and long-lasting relationships across GCC.",
       quickLinks: "QUICK LINKS",
       contact: "CONTACT US",
-      location: "Coimbatore, Tamil Nadu / GCC Operations",
+      location: "Office No. 310, P T C Building – Deira – Al Qusais Industrial Area 1, Dubai, UAE",
+      phone: "+971 50 164 7008",
       copyright: "© 2026 DharshanSkyline Contracting. All Rights Reserved.",
     }
   },
@@ -122,10 +123,11 @@ export const translations = {
       title: "ماذا يقول شركاؤنا",
     },
     footer: {
-      tagline: "نبني أكثر من مجرد هياكل، نبني الثقة والجودة والعلاقات طويلة الأمد عبر دول الخليج وجنوب آسيا.",
+      tagline: "نبني أكثر من مجرد هياكل، نبني الثقة والجودة والعلاقات طويلة الأمد عبر دول مجلس التعاون الخليجي.",
       quickLinks: "روابط سريعة",
       contact: "اتصل بنا",
-      location: "كويامباتور / عمليات دول مجلس التعاون الخليجي",
+      location: "مكتب رقم 310، مبنى بي تي سي – ديرة – المنطقة الصناعية القصيص 1، دبي، الإمارات",
+      phone: "+971 50 164 7008",
       copyright: "© 2026 درشان سكايلان للمقاولات. جميع الحقوق محفوظة.",
     }
   }

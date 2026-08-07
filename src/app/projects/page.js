@@ -10,7 +10,7 @@ const projectsData = [
     category: "sobha",
     title: "SOBHA REALTY - TOWER STRUCTURAL FRAMING",
     client: "Sobha Realty",
-    location: "South India",
+    location: "Sobha Hartland, Dubai, UAE",
     image: "/images/sobha/sobha-1.jpg",
     description: "High-strength RCC structural framing, load-bearing slab execution, and core tower construction completed under strict safety and quality protocols.",
     specs: ["RCC Frame Construction", "High-Grade Concrete", "Formwork Precision"]
@@ -20,7 +20,7 @@ const projectsData = [
     category: "sobha",
     title: "SOBHA REALTY - HIGH-RISE ELEVATION WORK",
     client: "Sobha Realty",
-    location: "South India",
+    location: "Meydan, Dubai, UAE",
     image: "/images/sobha/sobha-2.jpg",
     description: "Extensive exterior elevation scaffolding, structural blockwork, and exterior masonry finishing executed for luxury residential towers.",
     specs: ["Exterior Blockwork", "Facade Scaffolding", "Quality QA/QC Certified"]
@@ -30,7 +30,7 @@ const projectsData = [
     category: "sobha",
     title: "SOBHA REALTY - ARCHITECTURAL MASONRY & FINISHES",
     client: "Sobha Realty",
-    location: "South India",
+    location: "Sobha Hartland, Dubai, UAE",
     image: "/images/sobha/sobha-3.jpg",
     description: "Precision architectural brickwork, structural beam reinforcement, and multi-story masonry detailing built for long-term durability.",
     specs: ["Precision Masonry", "Structural Reinforcement", "On-Time Handover"]
@@ -40,7 +40,7 @@ const projectsData = [
     category: "sobha",
     title: "SOBHA REALTY - TURNKEY SITE CONTRACTING",
     client: "Sobha Realty",
-    location: "South India",
+    location: "Dubai, UAE",
     image: "/images/sobha/sobha-4.jpg",
     description: "Full-scale site contracting supervision, material safety management, and structural execution for premier Sobha Realty developments.",
     specs: ["Turnkey Contracting", "Zero Safety Incidents", "Turnkey Supervision"]
@@ -50,7 +50,7 @@ const projectsData = [
     category: "commercial",
     title: "APEX CORPORATE HEADQUARTERS",
     client: "Apex Tech Enterprises",
-    location: "Bengaluru, South India",
+    location: "Business Bay, Dubai, UAE",
     image: "/images/project_commercial.png",
     description: "6-story modern corporate office facility featuring glass curtain walls, underground parking deck, and open-plan executive floor layouts.",
     specs: ["6-Story Steel & Glass", "Basement Parking", "Modern Executive Interiors"]
@@ -60,7 +60,7 @@ const projectsData = [
     category: "residential",
     title: "THE SKYLINE VILLA RESIDENCE",
     client: "Private Client",
-    location: "Coimbatore, South India",
+    location: "Jumeirah, Dubai, UAE",
     image: "/images/project_residential.png",
     description: "Custom multi-level luxury residence with cantilevered balconies, private courtyard landscaping, and premium structural concrete finish.",
     specs: ["Architectural Villa", "Custom Concrete Finish", "Turnkey Landscaping"]
@@ -70,7 +70,7 @@ const projectsData = [
     category: "industrial",
     title: "VANGUARD HEAVY LOGISTICS PARK",
     client: "Vanguard Logistics",
-    location: "Chennai, South India",
+    location: "Al Qusais, Dubai, UAE",
     image: "/images/project_industrial.png",
     description: "Heavy-duty 45,000 sq.ft industrial logistics warehouse with high-load flooring, automated crane rails, and insulated metal roofing.",
     specs: ["45,000 Sq.Ft Bay", "High-Load Slab", "Insulated Metal Roofing"]
@@ -80,7 +80,7 @@ const projectsData = [
     category: "residential",
     title: "MODERN INTERIOR APARTMENT FIT-OUT",
     client: "Skyline Living",
-    location: "Hyderabad, South India",
+    location: "Dubai Marina, Dubai, UAE",
     image: "/images/project_interior.png",
     description: "Turnkey luxury interior contracting, bespoke acoustic partition framing, electrical integration, and architectural wood finishes.",
     specs: ["Custom Joinery", "Acoustic Insulation", "Architectural Lighting"]
@@ -128,7 +128,7 @@ export default function ProjectsPage() {
             EXCELLENCE IN <span className="gold-text">CONTRACTING & EXECUTION</span>
           </h1>
           <p style={{ color: "var(--text-secondary)", fontSize: "1rem", maxWidth: "800px" }} className="fade-in-up">
-            Browse our landmark construction projects executed across South India, featuring official structural contracting work for <strong style={{ color: "var(--accent-gold)" }}>Sobha Realty</strong> and key commercial, residential, and industrial developments.
+            Browse our landmark construction projects executed across Dubai &amp; the GCC, featuring official structural contracting work for <strong style={{ color: "var(--accent-gold)" }}>Sobha Realty</strong> and key commercial, residential, and industrial developments.
           </p>
 
           {/* Filter Bar */}

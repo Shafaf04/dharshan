@@ -73,18 +73,18 @@ export default function ContactPage() {
 
             <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
               <div style={{ background: "var(--bg-card)", padding: "30px", border: "1px solid var(--border-color)", borderRadius: "12px", boxShadow: "var(--shadow-sm)" }}>
-                <h3 className="card-title">HEADQUARTERS OFFICE</h3>
+                <h3 className="card-title">OFFICE</h3>
                 <p className="card-desc" style={{ marginTop: "8px" }}>
-                  DharshanSkyline Contracting Tower,<br />
-                  100 Feet Road, Gandhipuram,<br />
-                  Coimbatore, Tamil Nadu - 641012
+                  Office No. 310, P T C Building,<br />
+                  Deira – Al Qusais Industrial Area 1,<br />
+                  Dubai, UAE
                 </p>
               </div>
 
               <div style={{ background: "var(--bg-card)", padding: "30px", border: "1px solid var(--border-color)", borderRadius: "12px", boxShadow: "var(--shadow-sm)" }}>
                 <h3 className="card-title">DIRECT CONTACT</h3>
                 <p className="card-desc" style={{ marginTop: "8px" }}>
-                  <strong>Phone:</strong> +91 12345 67890 / +91 98765 43210<br />
+                  <strong>Phone:</strong> +971 50 164 7008<br />
                   <strong>Email:</strong> dharshanskycon@gmail.com<br />
                   <strong>Hours:</strong> Mon - Sat: 9:00 AM - 6:30 PM
                 </p>
