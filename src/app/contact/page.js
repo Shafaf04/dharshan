@@ -5,10 +5,21 @@ import { useState } from "react";
 
 export default function ContactPage() {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [fullName, setFullName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [details, setDetails] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormSubmitted(true);
+
+    const subject = encodeURIComponent(`New Project Inquiry from ${fullName || "Website Client"}`);
+    const bodyText = `Full Name: ${fullName || "Not provided"}\nPhone Number: ${phone || "Not provided"}\nEmail Address: ${email || "Not provided"}\nProject Details / Site Location: ${details || "Not provided"}`;
+    const body = encodeURIComponent(bodyText);
+
+    const mailtoUrl = `mailto:dharshanskycon@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoUrl;
   };
 
   return (
@@ -43,26 +54,50 @@ export default function ContactPage() {
                 <div style={{ padding: "40px", border: "1px solid var(--accent-gold)", backgroundColor: "rgba(201, 168, 106, 0.08)", textTransform: "uppercase", textAlign: "center" }}>
                   <h3 style={{ color: "var(--accent-gold)", marginBottom: "10px" }}>Thank You!</h3>
                   <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>
-                    Your project inquiry has been received. Our senior civil engineer will reach out to you within 24 hours.
+                    Your project inquiry has been launched in your email client. Our senior civil engineer will reach out to you within 24 hours.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
                   <div className="form-group">
                     <label>Full Name</label>
-                    <input type="text" className="form-control" placeholder="Enter your full name" required />
+                    <input 
+                      type="text" 
+                      className="form-control" 
+                      placeholder="Enter your full name" 
+                      value={fullName}
+                      onChange={(e) => setFullName(e.target.value)}
+                    />
                   </div>
                   <div className="form-group">
                     <label>Phone Number</label>
-                    <input type="tel" className="form-control" placeholder="+91 XXXXX XXXXX" required />
+                    <input 
+                      type="tel" 
+                      className="form-control" 
+                      placeholder="+971 50 XXX XXXX" 
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                    />
                   </div>
                   <div className="form-group">
                     <label>Email Address</label>
-                    <input type="email" className="form-control" placeholder="name@example.com" required />
+                    <input 
+                      type="email" 
+                      className="form-control" 
+                      placeholder="name@example.com" 
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
                   <div className="form-group">
                     <label>Project Details / Site Location</label>
-                    <textarea className="form-control" rows="4" placeholder="Mention plot size, location, planned scope, etc."></textarea>
+                    <textarea 
+                      className="form-control" 
+                      rows="4" 
+                      placeholder="Mention plot size, location, planned scope, etc."
+                      value={details}
+                      onChange={(e) => setDetails(e.target.value)}
+                    ></textarea>
                   </div>
                   <button type="submit" className="btn btn-filled" style={{ marginTop: "10px" }}>
                     SUBMIT PROJECT INQUIRY &rarr;
