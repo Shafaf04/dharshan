@@ -1461,8 +1461,15 @@ html[dir="rtl"] .diagonal-line {
     }
 
     .page-hero {
-        padding: 125px 5% 40px !important;
+        padding: 130px 5% 40px !important;
         overflow: hidden !important;
+    }
+
+    .hero-section {
+        height: auto !important;
+        min-height: auto !important;
+        padding-top: 115px !important;
+        padding-bottom: 24px !important;
     }
 
     .page-hero-title {
@@ -1551,13 +1558,6 @@ html[dir="rtl"] .diagonal-line {
     
     .mobile-toggle.active .burger-line:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
-    }
-    
-    .hero-section {
-        height: auto !important;
-        min-height: auto !important;
-        padding-top: 80px !important;
-        padding-bottom: 24px !important;
     }
     
     .hero-diagonal-layout {
