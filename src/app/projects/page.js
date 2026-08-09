@@ -7,7 +7,7 @@ import Link from "next/link";
 const projectsData = [
   {
     id: 1,
-    category: "sobha",
+    category: "framing",
     title: "SOBHA REALTY - TOWER STRUCTURAL FRAMING",
     client: "Sobha Realty",
     location: "Sobha Hartland, Dubai, UAE",
@@ -17,7 +17,7 @@ const projectsData = [
   },
   {
     id: 2,
-    category: "sobha",
+    category: "elevation",
     title: "SOBHA REALTY - HIGH-RISE ELEVATION WORK",
     client: "Sobha Realty",
     location: "Meydan, Dubai, UAE",
@@ -27,7 +27,7 @@ const projectsData = [
   },
   {
     id: 3,
-    category: "sobha",
+    category: "masonry",
     title: "SOBHA REALTY - ARCHITECTURAL MASONRY & FINISHES",
     client: "Sobha Realty",
     location: "Sobha Hartland, Dubai, UAE",
@@ -37,53 +37,13 @@ const projectsData = [
   },
   {
     id: 4,
-    category: "sobha",
+    category: "turnkey",
     title: "SOBHA REALTY - TURNKEY SITE CONTRACTING",
     client: "Sobha Realty",
     location: "Dubai, UAE",
     image: "/images/sobha/sobha-4.jpg",
     description: "Full-scale site contracting supervision, material safety management, and structural execution for premier Sobha Realty developments.",
     specs: ["Turnkey Contracting", "Zero Safety Incidents", "Turnkey Supervision"]
-  },
-  {
-    id: 5,
-    category: "commercial",
-    title: "APEX CORPORATE HEADQUARTERS",
-    client: "Apex Tech Enterprises",
-    location: "Business Bay, Dubai, UAE",
-    image: "/images/project_commercial.png",
-    description: "6-story modern corporate office facility featuring glass curtain walls, underground parking deck, and open-plan executive floor layouts.",
-    specs: ["6-Story Steel & Glass", "Basement Parking", "Modern Executive Interiors"]
-  },
-  {
-    id: 6,
-    category: "residential",
-    title: "THE SKYLINE VILLA RESIDENCE",
-    client: "Private Client",
-    location: "Jumeirah, Dubai, UAE",
-    image: "/images/project_residential.png",
-    description: "Custom multi-level luxury residence with cantilevered balconies, private courtyard landscaping, and premium structural concrete finish.",
-    specs: ["Architectural Villa", "Custom Concrete Finish", "Turnkey Landscaping"]
-  },
-  {
-    id: 7,
-    category: "industrial",
-    title: "VANGUARD HEAVY LOGISTICS PARK",
-    client: "Vanguard Logistics",
-    location: "Al Qusais, Dubai, UAE",
-    image: "/images/project_industrial.png",
-    description: "Heavy-duty 45,000 sq.ft industrial logistics warehouse with high-load flooring, automated crane rails, and insulated metal roofing.",
-    specs: ["45,000 Sq.Ft Bay", "High-Load Slab", "Insulated Metal Roofing"]
-  },
-  {
-    id: 8,
-    category: "residential",
-    title: "MODERN INTERIOR APARTMENT FIT-OUT",
-    client: "Skyline Living",
-    location: "Dubai Marina, Dubai, UAE",
-    image: "/images/project_interior.png",
-    description: "Turnkey luxury interior contracting, bespoke acoustic partition framing, electrical integration, and architectural wood finishes.",
-    specs: ["Custom Joinery", "Acoustic Insulation", "Architectural Lighting"]
   }
 ];
 
@@ -121,24 +81,24 @@ export default function ProjectsPage() {
       <section style={{ backgroundColor: "var(--bg-secondary)", borderBottom: "1px solid var(--border-color)", padding: "80px 6% 60px" }}>
         <div className="section-container">
           <div className="label-container fade-in-up">
-            <span className="section-label">OUR PORTFOLIO</span>
+            <span className="section-label">SOBHA REALTY PORTFOLIO</span>
             <span className="label-line"></span>
           </div>
           <h1 className="section-title fade-in-up" style={{ fontSize: "2.5rem", marginBottom: "20px" }}>
-            EXCELLENCE IN <span className="gold-text">CONTRACTING & EXECUTION</span>
+            OFFICIAL <span className="gold-text">SOBHA REALTY CONTRACTING WORK</span>
           </h1>
           <p style={{ color: "var(--text-secondary)", fontSize: "1rem", maxWidth: "800px" }} className="fade-in-up">
-            Browse our landmark construction projects executed across Dubai &amp; the GCC, featuring official structural contracting work for <strong style={{ color: "var(--accent-gold)" }}>Sobha Realty</strong> and key commercial, residential, and industrial developments.
+            Browse our landmark structural contracting projects executed for <strong style={{ color: "var(--accent-gold)" }}>Sobha Realty</strong> across Dubai &amp; the GCC, showcasing premier high-rise RCC framing, exterior elevation work, architectural masonry, and turnkey site execution.
           </p>
 
           {/* Filter Bar */}
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "40px" }} className="fade-in-up">
             {[
-              { id: "all", label: "ALL PROJECTS" },
-              { id: "sobha", label: "SOBHA REALTY WORK" },
-              { id: "commercial", label: "COMMERCIAL" },
-              { id: "residential", label: "RESIDENTIAL" },
-              { id: "industrial", label: "INDUSTRIAL" },
+              { id: "all", label: "ALL SOBHA WORK" },
+              { id: "framing", label: "STRUCTURAL FRAMING" },
+              { id: "elevation", label: "HIGH-RISE ELEVATIONS" },
+              { id: "masonry", label: "MASONRY & FINISHES" },
+              { id: "turnkey", label: "TURNKEY CONTRACTING" },
             ].map(btn => (
               <button
                 key={btn.id}
@@ -157,8 +117,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Sobha Realty Spotlight Banner */}
-      {activeFilter === "all" || activeFilter === "sobha" ? (
-        <section style={{ padding: "60px 6% 40px", backgroundColor: "var(--bg-primary)" }}>
+      <section style={{ padding: "60px 6% 40px", backgroundColor: "var(--bg-primary)" }}>
           <div className="section-container">
             <div style={{
               backgroundColor: "var(--bg-card)",
@@ -189,7 +148,6 @@ export default function ProjectsPage() {
             </div>
           </div>
         </section>
-      ) : null}
 
       {/* Projects Grid */}
       <section style={{ padding: "40px 6% 120px" }}>

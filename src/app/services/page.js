@@ -35,9 +35,9 @@ export default function ServicesPage() {
             <span>/</span>
             <span className="current">SERVICES</span>
           </div>
-          <h1 className="page-hero-title">OUR CONTRACTING <span className="gold-text">SERVICES</span></h1>
+          <h1 className="page-hero-title">STRUCTURAL CONTRACTING <span className="gold-text">SERVICES</span></h1>
           <p className="page-hero-sub">
-            From initial site survey and architectural engineering to turnkey construction and interior execution.
+            High-specification civil engineering, high-rise RCC framing, elevation blockwork, and turnkey site contracting for Sobha Realty developments.
           </p>
         </div>
       </section>
@@ -53,14 +53,14 @@ export default function ServicesPage() {
                   <polyline points="9 22 9 12 15 12 15 22"></polyline>
                 </svg>
               </div>
-              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>RESIDENTIAL CONSTRUCTION</h3>
+              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>TOWER RCC STRUCTURAL FRAMING</h3>
               <p className="service-card-description" style={{ marginBottom: "20px" }}>
-                Crafting bespoke villas, multi-family duplexes, and luxury residential apartments tailored to modern living standards.
+                High-strength concrete structural framing, core load-bearing slabs, and column execution for Sobha Realty high-rise towers.
               </p>
               <ul style={{ listStyle: "square", color: "var(--accent-gold)", paddingLeft: "20px", fontSize: "0.85rem" }}>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Custom Architectural Design &amp; Floor Plans</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Earthquake-Resistant Reinforced RCC Structure</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Premium Interior Woodwork &amp; Marble Fit-Outs</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Heavy Reinforced Rebar &amp; Formwork Precision</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>High-Grade Compressive Strength Concrete</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Multi-Story Load-Bearing Slab Casting</span></li>
               </ul>
             </div>
 
@@ -73,14 +73,14 @@ export default function ServicesPage() {
                   <line x1="9" y1="16" x2="15" y2="16"></line>
                 </svg>
               </div>
-              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>COMMERCIAL BUILDINGS</h3>
+              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>HIGH-RISE ELEVATIONS &amp; BLOCKWORK</h3>
               <p className="service-card-description" style={{ marginBottom: "20px" }}>
-                High-efficiency corporate headquarters, tech hubs, retail complexes, and hospitality spaces designed for business growth.
+                Extensive exterior elevation scaffolding, structural blockwork, and facade perimeter masonry executed for luxury residential towers.
               </p>
               <ul style={{ listStyle: "square", color: "var(--accent-gold)", paddingLeft: "20px", fontSize: "0.85rem" }}>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Glass Façade Structural Glazing &amp; Elevation</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Centralized HVAC, MEP &amp; Fire Suppression Systems</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Acoustic Ceiling &amp; Executive Boardroom Interiors</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>High-Elevation Facade Scaffolding</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Thermal &amp; Acoustic Blockwork Masonry</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Quality Assurance Pre-Plaster Inspections</span></li>
               </ul>
             </div>
 
@@ -90,14 +90,14 @@ export default function ServicesPage() {
                   <path d="M2 20V4h8l2 4h10v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path>
                 </svg>
               </div>
-              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>INDUSTRIAL &amp; WAREHOUSING</h3>
+              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>ARCHITECTURAL MASONRY</h3>
               <p className="service-card-description" style={{ marginBottom: "20px" }}>
-                Heavy-load capacity industrial plants, logistics parks, steel shed structures, and cold-storage facilities.
+                Precision brickwork, beam lintel reinforcement, and detailed architectural masonry built for high durability and aesthetic finish.
               </p>
               <ul style={{ listStyle: "square", color: "var(--accent-gold)", paddingLeft: "20px", fontSize: "0.85rem" }}>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Pre-Engineered Building (PEB) Steel Structures</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Heavy-Duty VDF Concrete Flooring</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Loading Bay Ramps &amp; Crane Rail Systems</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Precision Wall Alignment &amp; Lintel Casting</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Structural Joint Moisture &amp; Crackproofing</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Strict Tolerance Architectural Detailing</span></li>
               </ul>
             </div>
 
@@ -107,14 +107,14 @@ export default function ServicesPage() {
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                 </svg>
               </div>
-              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>PROJECT MANAGEMENT</h3>
+              <h3 className="service-card-title" style={{ fontSize: "1.4rem", marginBottom: "15px" }}>TURNKEY SITE SUPERVISION</h3>
               <p className="service-card-description" style={{ marginBottom: "20px" }}>
-                Complete turnkey site management, quality control audits, material procurement, and statutory compliance supervision.
+                On-site structural supervision, safety compliance auditing, material quality testing, and milestone delivery for Sobha projects.
               </p>
               <ul style={{ listStyle: "square", color: "var(--accent-gold)", paddingLeft: "20px", fontSize: "0.85rem" }}>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Fixed Cost BOQ &amp; Budget Optimization</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Daily Progress Logs &amp; Milestone Reports</span></li>
-                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Quality Inspections &amp; Material Testing Labs</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Zero Incident Safety Protocols</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Daily Work Progress &amp; QA Checklists</span></li>
+                <li style={{ marginBottom: "8px" }}><span style={{ color: "var(--text-secondary)" }}>Material Strength &amp; Slump Test Audits</span></li>
               </ul>
             </div>
           </div>

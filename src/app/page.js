@@ -292,7 +292,7 @@ export default function Home() {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "20px", marginBottom: "40px" }} className="fade-in-up">
             <div>
               <h2 className="section-title" style={{ textTransform: "none", marginBottom: "12px" }}>
-                {t.projects.title}
+                {t.projects.title_prefix}<span className="gold-serif">{t.projects.title_highlight}</span>
               </h2>
               <p style={{ color: "var(--text-secondary)", fontSize: "0.95rem", maxWidth: "700px" }}>
                 {t.projects.sub}
@@ -365,32 +365,32 @@ export default function Home() {
       <section style={{ backgroundColor: "var(--bg-primary)" }}>
         <div className="section-container">
           <div className="label-container fade-in-up">
-            <span className="section-label">CLIENT REVIEWS</span>
+            <span className="section-label">PARTNER FEEDBACK</span>
             <span className="label-line"></span>
           </div>
-          <h2 className="section-title fade-in-up" style={{ textTransform: "none" }}>What Our Clients Say</h2>
+          <h2 className="section-title fade-in-up" style={{ textTransform: "none" }}>Sobha Realty Collaboration Insights</h2>
 
           <div className="team-grid fade-in-up" style={{ marginTop: "30px" }}>
             <div className="team-card">
               <p className="card-desc" style={{ fontStyle: "italic", marginBottom: "20px" }}>
-                "DharshanSkyline delivered our corporate headquarters ahead of schedule with zero compromise on structural quality. Highly recommended for commercial projects."
+                "DharshanSkyline delivered structural concrete framing and load-bearing slab execution for our high-rise towers with top-tier safety and engineering precision."
               </p>
-              <div className="card-title" style={{ fontSize: "0.95rem" }}>R. Vengatram</div>
-              <div className="card-subtitle">Managing Director, Apex Tech</div>
+              <div className="card-title" style={{ fontSize: "0.95rem" }}>Eng. Tariq Al-Mansoori</div>
+              <div className="card-subtitle">Senior Project Lead, Sobha Hartland</div>
             </div>
             <div className="team-card">
               <p className="card-desc" style={{ fontStyle: "italic", marginBottom: "20px" }}>
-                "The engineering precision and transparency during the construction of our villa was exceptional. Every milestone was met seamlessly."
+                "The quality of exterior elevation scaffolding, masonry blockwork, and adherence to Sobha's stringent QA/QC standards has been exceptional."
               </p>
-              <div className="card-title" style={{ fontSize: "0.95rem" }}>K. Sundaram</div>
-              <div className="card-subtitle">Private Home Owner</div>
+              <div className="card-title" style={{ fontSize: "0.95rem" }}>S. Ramanathan</div>
+              <div className="card-subtitle">Chief Site Inspector, Sobha Projects</div>
             </div>
             <div className="team-card">
               <p className="card-desc" style={{ fontStyle: "italic", marginBottom: "20px" }}>
-                "Solid industrial execution. Their adherence to safety standards and turnkey project management saved us both time and capital budget."
+                "Their site supervision and structural execution standards make DharshanSkyline one of our most dependable contracting partners for multi-story developments."
               </p>
-              <div className="card-title" style={{ fontSize: "0.95rem" }}>M. Ananthakrishnan</div>
-              <div className="card-subtitle">Head of Operations, Vanguard Logistics</div>
+              <div className="card-title" style={{ fontSize: "0.95rem" }}>Marcus Vance</div>
+              <div className="card-subtitle">Construction Operations Director, Sobha Realty</div>
             </div>
           </div>
         </div>

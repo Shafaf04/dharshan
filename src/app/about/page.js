@@ -29,12 +29,12 @@ export default function AboutPage() {
               <span className="section-label">WHO WE ARE</span>
               <span className="label-line"></span>
             </div>
-            <h2 className="section-title">ENGINEERING EXCELLENCE SINCE 2009</h2>
+            <h2 className="section-title">STRUCTURAL CONTRACTING EXCELLENCE</h2>
             <p className="about-description" style={{ marginBottom: "20px" }}>
-              Dharshanskyline Contracting was established with a singular objective: to raise the standard of civil construction, residential design, and commercial infrastructure in South India.
+              Dharshanskyline Contracting operates as an official structural contracting partner for <strong>Sobha Realty</strong>, delivering high-specification RCC framing, high-rise elevation blockwork, and architectural masonry across Dubai and the GCC.
             </p>
             <p className="about-description" style={{ marginBottom: "30px" }}>
-              Our team consists of senior civil engineers, project managers, safety inspectors, and skilled craftsmen who collaborate to transform complex blueprints into enduring architectural monuments.
+              Our team consists of senior civil engineers, project managers, safety inspectors, and skilled craftsmen who collaborate to execute complex structural blueprints into enduring architectural landmarks.
             </p>
             
             <div className="label-container" style={{ marginTop: "30px" }}>
