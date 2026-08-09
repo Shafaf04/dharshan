@@ -153,7 +153,7 @@ export default function Home() {
                   <line x1="9" y1="16" x2="15" y2="16"></line>
                 </svg>
               </div>
-              <div>
+              <div style={{ minWidth: 0, flex: 1 }}>
                 <div className="stat-number-value">
                   <AnimatedStat value={150} suffix="+" duration={2000} />
                 </div>
@@ -169,7 +169,7 @@ export default function Home() {
                   <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                 </svg>
               </div>
-              <div>
+              <div style={{ minWidth: 0, flex: 1 }}>
                 <div className="stat-number-value">
                   <AnimatedStat value={12} suffix="+" duration={2200} />
                 </div>
@@ -185,8 +185,8 @@ export default function Home() {
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
               </div>
-              <div>
-                <div className="stat-number-value" style={{ fontSize: "1.4rem" }}>{t.stats.s3_num}</div>
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="stat-number-value">{t.stats.s3_num}</div>
                 <div className="stat-label-text">{t.stats.s3_label}</div>
               </div>
             </div>
@@ -201,8 +201,8 @@ export default function Home() {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
-              <div>
-                <div className="stat-number-value" style={{ fontSize: "1.3rem" }}>{t.stats.s4_num}</div>
+              <div style={{ minWidth: 0, flex: 1 }}>
+                <div className="stat-number-value">{t.stats.s4_num}</div>
                 <div className="stat-label-text">{t.stats.s4_label}</div>
               </div>
             </div>
