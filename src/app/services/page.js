@@ -121,43 +121,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Execution Methodology / Workflow */}
-      <section style={{ backgroundColor: "var(--bg-secondary)", borderTop: "1px solid var(--border-color)", borderBottom: "1px solid var(--border-color)" }}>
-        <div className="section-container">
-          <div className="label-container">
-            <span className="section-label">THE PROCESS</span>
-            <span className="label-line"></span>
-          </div>
-          <h2 className="section-title">HOW WE EXECUTE YOUR PROJECT</h2>
-
-          <div className="process-grid">
-            <div className="process-step">
-              <div className="step-number">01</div>
-              <h3 className="card-title">CONSULTATION &amp; DESIGN</h3>
-              <p className="card-desc">Understanding client objectives, preliminary soil tests, 3D architectural renders, and BOQ estimation.</p>
-            </div>
-
-            <div className="process-step">
-              <div className="step-number">02</div>
-              <h3 className="card-title">PERMITS &amp; STRUCTURAL</h3>
-              <p className="card-desc">Securing local authority sanctions, structural calculation sign-offs, and site mobilization.</p>
-            </div>
-
-            <div className="process-step">
-              <div className="step-number">03</div>
-              <h3 className="card-title">CIVIL CONSTRUCTION</h3>
-              <p className="card-desc">Foundation excavation, RCC superstructure framing, brickwork, and MEP conduit installation.</p>
-            </div>
-
-            <div className="process-step">
-              <div className="step-number">04</div>
-              <h3 className="card-title">QUALITY AUDIT &amp; HANDOVER</h3>
-              <p className="card-desc">Finishing fit-outs, waterproofing stress-tests, client walk-through inspection, and final keys handover.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Accordion */}
       <section>
         <div className="section-container" style={{ maxWidth: "1000px" }}>
