@@ -73,7 +73,7 @@ export default function Home() {
             <h1 className="hero-title" style={{ textTransform: "none" }}>
               {t.hero.t1}<br />
               {t.hero.t2}<br />
-              <span className="gold-serif" style={{ fontSize: "4.2rem" }}>{t.hero.t3_serif}</span> {t.hero.t3_end}
+              <span className="gold-serif hero-serif-highlight">{t.hero.t3_serif}</span> {t.hero.t3_end}
             </h1>
 
             <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", marginTop: "32px" }}>

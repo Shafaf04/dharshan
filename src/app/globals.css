@@ -492,6 +492,11 @@ html[dir="rtl"] .diagonal-line {
     color: var(--text-primary);
 }
 
+.hero-serif-highlight {
+    font-size: 3.8rem;
+    line-height: 1;
+}
+
 /* -------------------------------------------------------------
    Sliding Marquee Ticker Band
 ------------------------------------------------------------- */
@@ -1550,9 +1555,9 @@ html[dir="rtl"] .diagonal-line {
     
     .hero-section {
         height: auto !important;
-        min-height: 100vh;
-        padding-top: 95px !important;
-        padding-bottom: 30px !important;
+        min-height: auto !important;
+        padding-top: 80px !important;
+        padding-bottom: 24px !important;
     }
     
     .hero-diagonal-layout {
@@ -1561,7 +1566,7 @@ html[dir="rtl"] .diagonal-line {
         grid-template-columns: 1fr !important;
         width: 100% !important;
         height: auto !important;
-        gap: 24px !important;
+        gap: 16px !important;
     }
 
     .hero-left-content {
@@ -1570,13 +1575,34 @@ html[dir="rtl"] .diagonal-line {
         text-align: left;
     }
 
+    .hero-left-content .label-container {
+        margin-bottom: 10px !important;
+    }
+
+    .hero-left-content .section-label {
+        font-size: 0.65rem !important;
+        letter-spacing: 0.08em !important;
+        line-height: 1.35 !important;
+    }
+
+    .hero-title {
+        font-size: 1.75rem !important;
+        line-height: 1.22 !important;
+        margin-bottom: 16px !important;
+    }
+
+    .hero-serif-highlight {
+        font-size: 2.1rem !important;
+    }
+
     html[dir="rtl"] .hero-left-content {
         text-align: right;
     }
 
     .hero-right-image {
-        height: 280px !important;
+        height: 220px !important;
         width: 100% !important;
+        margin-top: 8px !important;
     }
 
     .hero-right-image-wrapper,
@@ -1587,7 +1613,8 @@ html[dir="rtl"] .diagonal-line {
         width: 100% !important;
         height: 100% !important;
         clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%) !important;
-        border-radius: 16px;
+        border-radius: 14px;
+        overflow: hidden !important;
     }
 
     .diagonal-line {
